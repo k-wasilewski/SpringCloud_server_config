@@ -12,12 +12,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    @Autowired
-    public void configureGlobal1(AuthenticationManagerBuilder auth)
-            throws Exception {
-        auth.inMemoryAuthentication();
-    }
-
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.csrf()
