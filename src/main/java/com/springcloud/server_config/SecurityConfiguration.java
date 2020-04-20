@@ -19,6 +19,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .ignoringAntMatchers("/decrypt/**");
 
          super.configure(http);
-
     }
+
 }
